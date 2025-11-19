@@ -26,20 +26,20 @@ export default function Contact() {
                   <div>
                     <h3 className="text-lg font-medium text-stone-900 mb-2">Email</h3>
                     <a 
-                      href="mailto:Example@gmail.com" 
+                      href="mailto:k.jepeal@gmail.com" 
                       className="text-stone-700 hover:text-stone-900 transition-colors"
                     >
-                      Example@gmail.com
+                      k.jepeal@gmail.com
                     </a>
                   </div>
                   
                   <div>
                     <h3 className="text-lg font-medium text-stone-900 mb-2">Phone</h3>
                     <a 
-                      href="tel:0123456789" 
+                      href="tel:860-670-7250" 
                       className="text-stone-700 hover:text-stone-900 transition-colors"
                     >
-                      0123456789
+                      (860) 670-7250
                     </a>
                   </div>
                   
@@ -182,11 +182,11 @@ export default function Contact() {
             Expert Construction & Renovation Solutions
           </p>
           <div className="flex flex-col sm:flex-row justify-center items-center space-y-2 sm:space-y-0 sm:space-x-8 text-stone-300">
-            <a href="mailto:Example@gmail.com" className="hover:text-white transition-colors">
-              Example@gmail.com
+            <a href="mailto:k.jepeal@gmail.com" className="hover:text-white transition-colors">
+              k.jepeal@gmail.com
             </a>
-            <a href="tel:0123456789" className="hover:text-white transition-colors">
-              0123456789
+            <a href="tel:860-670-7250" className="hover:text-white transition-colors">
+              (860) 670-7250
             </a>
           </div>
           <div className="mt-8 pt-8 border-t border-stone-700 text-stone-400 text-sm">

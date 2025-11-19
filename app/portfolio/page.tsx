@@ -164,11 +164,11 @@ export default function Portfolio() {
             Expert Construction & Renovation Solutions
           </p>
           <div className="flex flex-col sm:flex-row justify-center items-center space-y-2 sm:space-y-0 sm:space-x-8 text-stone-300">
-            <a href="mailto:Example@gmail.com" className="hover:text-white transition-colors">
-              Example@gmail.com
+            <a href="mailto:k.jepeal@gmail.com" className="hover:text-white transition-colors">
+              k.jepeal@gmail.com
             </a>
-            <a href="tel:0123456789" className="hover:text-white transition-colors">
-              0123456789
+            <a href="tel:860-670-7250" className="hover:text-white transition-colors">
+              (860) 670-7250
             </a>
           </div>
           <div className="mt-8 pt-8 border-t border-stone-700 text-stone-400 text-sm">
