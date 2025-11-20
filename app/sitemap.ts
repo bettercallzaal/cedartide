@@ -15,6 +15,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
+      url: 'https://cedartide.vercel.app/expertise',
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.7,
+    },
+    {
+      url: 'https://cedartide.vercel.app/story',
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.6,
+    },
+    {
       url: 'https://cedartide.vercel.app/contact',
       lastModified: new Date(),
       changeFrequency: 'yearly',
