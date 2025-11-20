@@ -39,7 +39,7 @@ export default function Portfolio() {
                 <p className="text-stone-700 mb-4">
                   Custom stone fireplaces and chimneys that serve as stunning focal points for any home.
                 </p>
-                <a href="#" className="text-stone-800 hover:text-stone-900 font-medium">
+                <a href="/gallery/fireplaces" className="text-stone-800 hover:text-stone-900 font-medium">
                   View Gallery →
                 </a>
               </div>
@@ -58,7 +58,7 @@ export default function Portfolio() {
                 <p className="text-stone-700 mb-4">
                   Stone in kitchens, bathrooms, and interior spaces that bring natural beauty indoors.
                 </p>
-                <a href="#" className="text-stone-800 hover:text-stone-900 font-medium">
+                <a href="/gallery/interiors" className="text-stone-800 hover:text-stone-900 font-medium">
                   View Gallery →
                 </a>
               </div>
@@ -77,7 +77,7 @@ export default function Portfolio() {
                 <p className="text-stone-700 mb-4">
                   Retaining walls, garden features, pathways, and outdoor living spaces that complement nature.
                 </p>
-                <a href="#" className="text-stone-800 hover:text-stone-900 font-medium">
+                <a href="/gallery/landscape" className="text-stone-800 hover:text-stone-900 font-medium">
                   View Gallery →
                 </a>
               </div>
@@ -96,7 +96,7 @@ export default function Portfolio() {
                 <p className="text-stone-700 mb-4">
                   Intricate details and artistic elements that showcase the beauty and versatility of stone.
                 </p>
-                <a href="#" className="text-stone-800 hover:text-stone-900 font-medium">
+                <a href="/gallery/stone-details" className="text-stone-800 hover:text-stone-900 font-medium">
                   View Gallery →
                 </a>
               </div>
@@ -115,7 +115,7 @@ export default function Portfolio() {
                 <p className="text-stone-700 mb-4">
                   Exterior stonework that enhances architectural beauty and adds lasting value to homes.
                 </p>
-                <a href="#" className="text-stone-800 hover:text-stone-900 font-medium">
+                <a href="/gallery/stone-houses" className="text-stone-800 hover:text-stone-900 font-medium">
                   View Gallery →
                 </a>
               </div>
@@ -134,7 +134,7 @@ export default function Portfolio() {
                 <p className="text-stone-700 mb-4">
                   Professional stone installations for businesses, restaurants, and public spaces.
                 </p>
-                <a href="#" className="text-stone-800 hover:text-stone-900 font-medium">
+                <a href="/gallery/commercial" className="text-stone-800 hover:text-stone-900 font-medium">
                   View Gallery →
                 </a>
               </div>
