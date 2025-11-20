@@ -1,5 +1,6 @@
 import Navigation from '@/components/Navigation'
 import { Metadata } from 'next'
+import Image from 'next/image'
 
 export const metadata: Metadata = {
   title: 'Fireplaces and Chimneys Gallery - Custom Stone Fireplaces',
@@ -8,43 +9,49 @@ export const metadata: Metadata = {
 }
 
 export default function FireplacesGallery() {
-  // Placeholder image data - replace with actual project images
+  // Project examples - actual project photos coming soon
   const projects = [
     {
       id: 1,
-      title: "Grand Stone Fireplace",
-      description: "Custom fieldstone fireplace with natural stone mantel",
-      category: "Residential"
+      title: "Custom Stone Fireplace",
+      description: "Example of our custom fireplace construction",
+      category: "Residential",
+      image: "/images/placeholder.svg"
     },
     {
       id: 2,
-      title: "Modern Stone Chimney",
-      description: "Contemporary design with traditional craftsmanship",
-      category: "Residential"
+      title: "Stone Chimney Work",
+      description: "Professional chimney construction and repair",
+      category: "Residential",
+      image: "/images/placeholder.svg"
     },
     {
       id: 3,
-      title: "Rustic Cabin Fireplace",
-      description: "Natural stone fireplace perfect for mountain retreat",
-      category: "Residential"
+      title: "Natural Stone Fireplace",
+      description: "Handcrafted natural stone fireplace installation",
+      category: "Residential",
+      image: "/images/placeholder.svg"
     },
     {
       id: 4,
-      title: "Outdoor Stone Fireplace",
-      description: "Weather-resistant outdoor entertaining space",
-      category: "Landscape"
+      title: "Outdoor Fire Feature",
+      description: "Outdoor stone fireplace for entertaining",
+      category: "Landscape",
+      image: "/images/placeholder.svg"
     },
     {
       id: 5,
-      title: "Historic Restoration",
-      description: "Careful restoration of 19th century stone fireplace",
-      category: "Restoration"
+      title: "Stone Restoration Project",
+      description: "Professional restoration of existing stonework",
+      category: "Restoration",
+      image: "/images/placeholder.svg"
     },
     {
       id: 6,
-      title: "Commercial Fireplace",
-      description: "Statement fireplace for restaurant dining area",
-      category: "Commercial"
+      title: "Commercial Stone Feature",
+      description: "Commercial fireplace installation",
+      category: "Commercial",
+      image: "/images/placeholder.svg"
     }
   ]
 
@@ -69,19 +76,26 @@ export default function FireplacesGallery() {
               Our custom stone fireplaces and chimneys are crafted with precision and artistry, creating stunning focal 
               points that blend seamlessly with your home's architecture.
             </p>
+            <div className="bg-amber-50 border border-amber-200 rounded-lg p-4 mt-6">
+              <p className="text-amber-800 text-center font-medium">
+                🚧 Gallery images coming soon! Contact us to see examples of our recent fireplace projects.
+              </p>
+            </div>
           </div>
 
           {/* Gallery Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project) => (
               <div key={project.id} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
-                {/* Placeholder for image */}
-                <div className="h-64 bg-gradient-to-br from-stone-200 to-stone-300 flex items-center justify-center">
-                  <div className="text-center text-stone-600">
-                    <div className="text-4xl mb-2">🏠</div>
-                    <div className="text-sm">Project #{project.id}</div>
-                    <div className="text-xs text-stone-500 mt-1">Image Coming Soon</div>
-                  </div>
+                {/* Project Image */}
+                <div className="h-64 relative bg-stone-100">
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
                 </div>
                 
                 <div className="p-6">

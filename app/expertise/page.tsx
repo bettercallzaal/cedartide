@@ -22,6 +22,11 @@ export default function Expertise() {
             <p className="text-lg sm:text-xl text-stone-700 max-w-4xl leading-relaxed mb-8">
               With over 40 years of experience in stone construction and masonry, Cedartide Stone brings unparalleled expertise to every project. Our deep understanding of natural stone materials, traditional techniques, and modern construction methods ensures exceptional results that stand the test of time.
             </p>
+            <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-8">
+              <p className="text-blue-800 text-center font-medium">
+                📋 Detailed expertise sections being finalized. Contact us to discuss your specific project needs.
+              </p>
+            </div>
           </div>
 
           {/* Expertise Areas */}

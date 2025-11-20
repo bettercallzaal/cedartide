@@ -15,10 +15,16 @@ export default function StoneDetailsGallery() {
           <p className="text-lg text-stone-700 mb-8">
             Intricate details and artistic elements that showcase the beauty and versatility of stone.
           </p>
-          <div className="bg-white rounded-lg p-8 text-center">
-            <p className="text-stone-600 mb-4">Gallery coming soon with detailed stonework examples.</p>
-            <a href="/contact" className="inline-block bg-stone-800 text-white px-6 py-2 rounded-sm hover:bg-stone-900">
-              Contact Us
+          <div className="bg-amber-50 border border-amber-200 rounded-lg p-6 mb-8">
+            <p className="text-amber-800 text-center font-medium mb-4">
+              🚧 Gallery images coming soon! We're preparing examples of our detailed stonework.
+            </p>
+          </div>
+          <div className="bg-white rounded-lg p-8 text-center shadow-sm">
+            <h2 className="text-2xl font-serif text-stone-900 mb-4">See Our Craftsmanship</h2>
+            <p className="text-stone-600 mb-6">Contact us to see examples of our detailed stonework and discuss your project.</p>
+            <a href="/contact" className="inline-block bg-stone-800 text-white px-8 py-3 rounded-sm hover:bg-stone-900 transition-colors font-medium">
+              Get In Touch
             </a>
           </div>
         </div>

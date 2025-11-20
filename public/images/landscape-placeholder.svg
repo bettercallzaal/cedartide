@@ -1,0 +1,14 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="fieldstone" patternUnits="userSpaceOnUse" width="50" height="30">
+      <rect width="50" height="30" fill="#a8a29e"/>
+      <ellipse cx="25" cy="15" rx="20" ry="12" fill="#78716c"/>
+      <ellipse cx="10" cy="8" rx="8" ry="6" fill="#57534e"/>
+    </pattern>
+  </defs>
+  <rect width="400" height="300" fill="#84cc16"/>
+  <rect x="0" y="200" width="400" height="100" fill="url(#fieldstone)"/>
+  <rect x="0" y="150" width="400" height="50" fill="#65a30d"/>
+  <text x="200" y="270" font-family="serif" font-size="14" fill="#fafaf9" text-anchor="middle">Landscape Stonework</text>
+  <text x="200" y="290" font-family="serif" font-size="12" fill="#d6d3d1" text-anchor="middle">Cedartide Stone</text>
+</svg>

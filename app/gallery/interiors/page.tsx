@@ -1,5 +1,6 @@
 import Navigation from '@/components/Navigation'
 import { Metadata } from 'next'
+import Image from 'next/image'
 
 export const metadata: Metadata = {
   title: 'Interior Stonework Gallery - Stone in Kitchens & Bathrooms',
@@ -9,12 +10,12 @@ export const metadata: Metadata = {
 
 export default function InteriorsGallery() {
   const projects = [
-    { id: 1, title: "Kitchen Stone Backsplash", description: "Natural stone backsplash with custom patterns" },
-    { id: 2, title: "Bathroom Stone Vanity", description: "Elegant stone vanity top with integrated sink" },
-    { id: 3, title: "Living Room Accent Wall", description: "Dramatic stone accent wall feature" },
-    { id: 4, title: "Stone Countertops", description: "Custom granite countertops with edge details" },
-    { id: 5, title: "Entryway Stone Floor", description: "Durable stone flooring for high-traffic areas" },
-    { id: 6, title: "Wine Cellar Stonework", description: "Climate-appropriate stone for wine storage" }
+    { id: 1, title: "Kitchen Stone Backsplash", description: "Natural stone backsplash with custom patterns", image: "/images/placeholder.svg" },
+    { id: 2, title: "Bathroom Stone Vanity", description: "Elegant stone vanity top with integrated sink", image: "/images/placeholder.svg" },
+    { id: 3, title: "Living Room Accent Wall", description: "Dramatic stone accent wall feature", image: "/images/placeholder.svg" },
+    { id: 4, title: "Stone Countertops", description: "Custom granite countertops with edge details", image: "/images/placeholder.svg" },
+    { id: 5, title: "Entryway Stone Floor", description: "Durable stone flooring for high-traffic areas", image: "/images/placeholder.svg" },
+    { id: 6, title: "Wine Cellar Stonework", description: "Climate-appropriate stone for wine storage", image: "/images/placeholder.svg" }
   ]
 
   return (
@@ -41,13 +42,15 @@ export default function InteriorsGallery() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project) => (
-              <div key={project.id} className="bg-white rounded-lg shadow-md overflow-hidden">
-                <div className="h-64 bg-gradient-to-br from-stone-300 to-stone-400 flex items-center justify-center">
-                  <div className="text-center text-stone-600">
-                    <div className="text-4xl mb-2">🏛️</div>
-                    <div className="text-sm">Project #{project.id}</div>
-                    <div className="text-xs text-stone-500 mt-1">Image Coming Soon</div>
-                  </div>
+              <div key={project.id} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                <div className="h-64 relative bg-stone-100">
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
                 </div>
                 <div className="p-6">
                   <div className="flex items-center justify-between mb-2">
