@@ -42,7 +42,9 @@ const Navigation = () => {
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-stone-700 hover:text-stone-900 focus:outline-none"
+              className="text-stone-700 hover:text-stone-900 focus:outline-none focus:ring-2 focus:ring-stone-500 focus:ring-offset-2 rounded-sm p-2"
+              aria-expanded={isOpen}
+              aria-label="Toggle navigation menu"
             >
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>

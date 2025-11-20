@@ -1,4 +1,11 @@
 import Navigation from '@/components/Navigation'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Contact Us - Get Your Stone Construction Estimate',
+  description: 'Contact Cedartide Stone for your construction project. Get a detailed estimate within 48 hours. Call (860) 670-7250 or email k.jepeal@gmail.com for professional stonework services.',
+  keywords: ['contact stone contractor', 'stone construction estimate', 'Connecticut stonework', 'masonry quote', 'stone renovation contact'],
+}
 
 export default function Contact() {
   return (

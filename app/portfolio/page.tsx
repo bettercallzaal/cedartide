@@ -1,4 +1,11 @@
 import Navigation from '@/components/Navigation'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Portfolio - Custom Remodels and Renovations',
+  description: 'View our portfolio of custom stonework projects including residential, commercial, and landscape stonework. Over 40 years of expertise in stone construction and renovation.',
+  keywords: ['stonework portfolio', 'stone construction examples', 'custom remodels', 'stone renovation projects', 'masonry gallery'],
+}
 
 export default function Portfolio() {
   return (
