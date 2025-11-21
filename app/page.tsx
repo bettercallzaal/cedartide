@@ -19,12 +19,43 @@ export default function Home() {
               <p className="text-lg sm:text-xl text-stone-700 mb-12 leading-relaxed">
                 Through our commitment to fusing our clients' ideas with the organic world that surrounds us, we continue to maintain our vision of creating the finest work using beautifully shaped natural stone.
               </p>
-              <a 
-                href="/portfolio"
-                className="inline-block text-stone-800 border-b-2 border-stone-800 pb-1 text-lg font-medium hover:text-stone-600 hover:border-stone-600 transition-colors duration-200"
-              >
-                Click here to view our work.
-              </a>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a 
+                  href="/contact"
+                  className="inline-block bg-stone-800 text-white px-8 py-3 rounded-sm hover:bg-stone-900 transition-colors duration-200 font-medium"
+                >
+                  Request Free Estimate
+                </a>
+                <a 
+                  href="/portfolio"
+                  className="inline-block text-stone-800 border-b-2 border-stone-800 pb-1 text-lg font-medium hover:text-stone-600 hover:border-stone-600 transition-colors duration-200"
+                >
+                  View Our Work
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Trust Signals Section */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-stone-100">
+        <div className="max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+            <div className="bg-white rounded-lg p-6 shadow-sm">
+              <div className="text-3xl font-serif text-stone-800 mb-2">40+</div>
+              <div className="text-stone-700 font-medium">Years of Experience</div>
+              <div className="text-sm text-stone-600 mt-2">Trusted expertise in stone construction</div>
+            </div>
+            <div className="bg-white rounded-lg p-6 shadow-sm">
+              <div className="text-3xl font-serif text-stone-800 mb-2">100%</div>
+              <div className="text-stone-700 font-medium">Licensed & Insured</div>
+              <div className="text-sm text-stone-600 mt-2">Fully certified Connecticut contractor</div>
+            </div>
+            <div className="bg-white rounded-lg p-6 shadow-sm">
+              <div className="text-3xl font-serif text-stone-800 mb-2">500+</div>
+              <div className="text-stone-700 font-medium">Projects Completed</div>
+              <div className="text-sm text-stone-600 mt-2">Satisfied customers across Connecticut</div>
             </div>
           </div>
         </div>

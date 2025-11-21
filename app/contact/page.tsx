@@ -57,6 +57,14 @@ export default function Contact() {
                       <p>Sun: Closed</p>
                     </div>
                   </div>
+
+                  <div>
+                    <h3 className="text-lg font-medium text-stone-900 mb-2">Service Area</h3>
+                    <div className="text-stone-700">
+                      <p>Connecticut and surrounding areas</p>
+                      <p className="text-sm text-stone-600 mt-1">Contact us to confirm service in your area</p>
+                    </div>
+                  </div>
                 </div>
               </div>
 
