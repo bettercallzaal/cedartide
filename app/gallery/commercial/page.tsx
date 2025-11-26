@@ -1,34 +1,69 @@
 import Navigation from '@/components/Navigation'
+import { Metadata } from 'next'
+import GalleryClient from '@/components/GalleryClient'
+
+export const metadata: Metadata = {
+  title: 'Commercial Stone Projects - Corporate, Institutional, & Public',
+  description: 'View our commercial stonework portfolio including corporate headquarters, university campuses, restaurants, and public parks.',
+  keywords: ['commercial stone projects', 'corporate stonework', 'institutional masonry', 'public park stone features', 'commercial stone facade'],
+}
 
 export default function CommercialGallery() {
+
+  // Project examples - actual project photos coming soon
+  const projects = [
+    {
+      id: 1,
+      title: "Corporate Headquarters Entrance",
+      description: "Impressive stone entrance signage and walls",
+      category: "Corporate",
+      image: "/images/placeholder.svg"
+    },
+    {
+      id: 2,
+      title: "University Campus Stonework",
+      description: "Stone walls and features for campus grounds",
+      category: "Institutional",
+      image: "/images/placeholder.svg"
+    },
+    {
+      id: 3,
+      title: "Restaurant Facade",
+      description: "Inviting stone facade for upscale restaurant",
+      category: "Hospitality",
+      image: "/images/placeholder.svg"
+    },
+    {
+      id: 4,
+      title: "Public Park Features",
+      description: "Durable stone walls and seating for public park",
+      category: "Public",
+      image: "/images/placeholder.svg"
+    },
+    {
+      id: 5,
+      title: "Retail Center Stonework",
+      description: "Decorative stone accents for retail complex",
+      category: "Retail",
+      image: "/images/placeholder.svg"
+    },
+    {
+      id: 6,
+      title: "Church Restoration",
+      description: "Restoration of historic stone church exterior",
+      category: "Restoration",
+      image: "/images/placeholder.svg"
+    }
+  ]
+
   return (
-    <div className="min-h-screen bg-stone-50">
-      <Navigation />
-      <section className="py-16 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-6xl mx-auto">
-          <nav className="text-sm text-stone-600 mb-4">
-            <a href="/portfolio" className="hover:text-stone-800">Our Work</a>
-            <span className="mx-2">›</span>
-            <span>Commercial Spaces</span>
-          </nav>
-          <h1 className="text-3xl font-serif text-stone-900 mb-6">Commercial Spaces</h1>
-          <p className="text-lg text-stone-700 mb-8">
-            Professional stone installations for businesses, restaurants, and public spaces.
-          </p>
-          <div className="bg-amber-50 border border-amber-200 rounded-lg p-6 mb-8">
-            <p className="text-amber-800 text-center font-medium mb-4">
-              🚧 Gallery images coming soon! We're preparing examples of our commercial stonework projects.
-            </p>
-          </div>
-          <div className="bg-white rounded-lg p-8 text-center shadow-sm">
-            <h2 className="text-2xl font-serif text-stone-900 mb-4">Commercial Excellence</h2>
-            <p className="text-stone-600 mb-6">Contact us to see examples of our commercial stonework and discuss your business project.</p>
-            <a href="/contact" className="inline-block bg-stone-800 text-white px-8 py-3 rounded-sm hover:bg-stone-900 transition-colors font-medium">
-              Get In Touch
-            </a>
-          </div>
-        </div>
-      </section>
-    </div>
+    <GalleryClient
+      title="Commercial Projects"
+      description="We bring the same level of craftsmanship and attention to detail to our commercial projects as we do to our residential work. From corporate headquarters to public spaces, we create durable, impressive stonework that enhances the built environment and withstands high traffic."
+      breadcrumb="Commercial Projects"
+      projects={projects}
+      refPrefix="COM"
+      galleryType="commercial"
+    />
   )
 }

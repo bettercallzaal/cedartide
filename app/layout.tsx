@@ -1,6 +1,21 @@
 import type { Metadata } from 'next'
+import { Lora, Inter } from 'next/font/google'
 import './globals.css'
 import StructuredData from '@/components/StructuredData'
+import Navigation from '@/components/Navigation'
+import Footer from '@/components/Footer'
+
+const lora = Lora({
+  subsets: ['latin'],
+  variable: '--font-lora',
+  display: 'swap',
+})
+
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-inter',
+  display: 'swap',
+})
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://cedartide.vercel.app'),
@@ -48,11 +63,17 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${lora.variable} ${inter.variable}`}>
       <head>
         <StructuredData />
       </head>
-      <body>{children}</body>
+      <body className="flex flex-col min-h-screen">
+        <Navigation />
+        <main className="flex-grow">
+          {children}
+        </main>
+        <Footer />
+      </body>
     </html>
   )
 }
